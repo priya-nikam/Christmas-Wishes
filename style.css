@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  color: white;
+  background: #1e2021;
+  padding: 0;
+  margin: 0;
+  /* font-family: "Heebo", sans-serif; */
+  height: 100%;
+  width: 100%;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: grid;
+  padding-top: 100px;
+  z-index: 1;
+  background-image: 
+    linear-gradient(rgba(165, 196, 211, 0.071), #29374365)
+    url("snowimg/red-christmas-background-free-vector.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+main > .text {
+  place-self: center;
+  text-align: center;
+  max-width: 50vw;
+}
+
+.stats {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  z-index: 10;
+  filter: saturate(0);
+}
+
+#app canvas {
+  z-index: -1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  mix-blend-mode: overlay;
+}
+
+h1 {
+  font-size: 6vw;
+  font-weight: 100;
+  font-family: 'Mountains of Christmas', cursive;
+  margin: 0 auto 0;
+}
+h3 {
+  font-size: 1.5em;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 300;
+  position: absolute;
+  top: 23%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.dg.ac {
+  z-index: 2!important;
+}
+
+audio
+{
+  display: none;
+}
