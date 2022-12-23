@@ -3,13 +3,27 @@
 }
 
 body, html {
+  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+  overflow-x: hidden;
+  min-height: 100vh;
+  /* If you want to change the site height you can remove overflow-y */
+  /* pureSnow will automatically detect height of body tag */
+  overflow-y: hidden;
   color: white;
-  background: #1e2021;
   padding: 0;
   margin: 0;
   /* font-family: "Heebo", sans-serif; */
   height: 100%;
   width: 100%;
+}
+
+.snowflake {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: linear-gradient(white, white); /* Workaround for Chromium's selective color inversion */
+  border-radius: 50%;
+  filter: drop-shadow(0 0 10px white);
 }
 
 main {
@@ -19,9 +33,9 @@ main {
   display: grid;
   padding-top: 100px;
   z-index: 1;
-  background-image: 
+  /* background-image: 
     linear-gradient(rgba(165, 196, 211, 0.071), #29374365)
-    url("snowimg/red-christmas-background-free-vector.jpg");
+    url("snowimg/red-christmas-background-free-vector.jpg"); */
   background-size: cover;
   background-position: center;
 }
@@ -62,7 +76,7 @@ h3 {
   letter-spacing: 3px;
   font-weight: 300;
   position: absolute;
-  top: 23%;
+  top: 15%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
