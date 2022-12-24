@@ -3,7 +3,7 @@
 }
 
 body, html {
-  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+  background: radial-gradient(ellipse at bottom, #dd2b2b 0%, #bc1818 100%);
   overflow-x: hidden;
   min-height: 100vh;
   /* If you want to change the site height you can remove overflow-y */
